@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Mi Portafolio</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Carlos Anselmi" />
+	<meta http-equiv="refresh" content="100" />
+	<!-- STYLES -->
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style-body.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
+	<!-- FONTS -->
+	<!-- SCRIPT-TOP -->
+</head>
+<body cz-shortcut-listen="true">
+	<canvas id="canvas" style="height: 1015px;" width="1600" height="1015"></canvas>
+	<nav class="bar-navigate">
+		<ul>
+			<li><a href="" title=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+			<li><a href="" title=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+			<li><a href="" title=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="" title=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+			<li><a href="" title=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
+		</ul>
+	</nav>
+<i class="fa fa-twitter-square" aria-hidden="true"></i>
+	<div class="container">
+		<div class="hello" style="opacity: 1;"><h1>Hello, I'm Felix. <span class="element"></span></p></h1>
+		<!-- partials/state1.list.html -->
+		    <div ui-view="viewA"></div>
+		    <div ui-view="viewB"></div>
+		    <div ui-view="viewC"></div>
+		    <!-- Also a way to navigate -->
+		    <a ui-sref="route1">Route 1</a>
+		    <a ui-sref="route2">Route 2</a>
+	    </div>  
+	</div>
+	<!-- SCRIPT-BOT -->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular/angular-route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular/angular-ui-router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/routing.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/felix.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('li').hover(function(){
+			    $(this).effect( "bounce" );
+			}, function(){
+				$(this).finish();
+			});
+
+		</script>
+</body>
+</html>
